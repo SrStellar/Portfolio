@@ -42,8 +42,8 @@ app.use((err, req, res, next) => {
   console.log(`[ ERRO ] | Um erro foi encontrado: \n ${err}`)
 });
 
-app.listen(80, () => {
-    console.log(`[WEB] | Servidor rodando na porta: 80`);
+app.listen(5252, () => {
+    console.log(`[WEB] | Servidor rodando na porta: 5252`);
 });
   
 module.exports = app;
