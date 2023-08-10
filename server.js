@@ -20,11 +20,11 @@ app.get('/discord', (req, res) => {
 })
 
 app.get('/email', (req, res) => {
-  res.redirect('mailto:contato@srstellar.dev')
+  res.redirect('mailto:contato@srstellar.dev?subject=Ol%C3%A1%20-%20Contato%20do%20seu%20Portf%C3%B3lio&body=Vi%20seu%20portf%C3%B3lio%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os%2C%20me%20retorne%20quando%20possivel!')
 })
 
 app.get('/contato', (req, res) => {
-  res.redirect('mailto:contato@srstellar.dev')
+  res.redirect('mailto:contato@srstellar.dev?subject=Ol%C3%A1%20-%20Contato%20do%20seu%20Portf%C3%B3lio&body=Vi%20seu%20portf%C3%B3lio%20e%20fiquei%20interessado%20em%20seus%20servi%C3%A7os%2C%20me%20retorne%20quando%20possivel!')
 })
 
 app.get('/github', (req, res) => {

@@ -212,7 +212,7 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .home__social-icon {
@@ -261,7 +261,6 @@ img {
     border-radius: .5rem;
     transition: .3s;
     margin-top: 40px;
-    margin-left: 340px;
   }
 
 .button:hover {
@@ -351,7 +350,7 @@ img {
 }
 
 .skills__ux {
-  width: 85%;
+  width: 45%;
 }
 
 .skills__img {
@@ -547,3 +546,129 @@ img {
     width: 450px;
   }
 }
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: .5s;
+    }
+    
+    .nav__toggle {
+        display: block; /* Show the toggle button */
+    }
+    
+    .nav__list {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: var(--header-height);
+        left: -100%; /* Hide the menu items by default */
+        width: 100%;
+        background-color: var(--second-color);
+        transition: .5s;
+    }
+    
+    .nav__item {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .nav__link {
+        color: #fff;
+    }
+    
+    .nav__list.show {
+        left: 0; /* Show the menu items when toggled */
+    }
+}
+
+
+/* Estilos para tablets */
+@media screen and (min-width: 768px) {
+    /* Ajuste tamanhos de fonte, margens, preenchimento, etc. */
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .home__data {
+        margin-top: 120px;
+    }
+    
+    .nav__toggle {
+        display: none; /* Ocultar o botão de alternância em telas maiores */
+    }
+    
+    .nav__list {
+        display: flex;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+    
+    .nav__item {
+        margin-left: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    .nav__link {
+        color: var(--second-color);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Ajuste ainda mais os estilos para telas maiores */
+    .bd-grid {
+        margin: 0 auto; /* Centralize a grade em telas maiores */
+        padding: 0 2rem; /* Adicione espaçamento nas laterais */
+    }
+    
+    .home {
+        padding: 10rem 0 2rem; /* Espaçamento maior na parte superior */
+    }
+    
+    .home__img {
+        width: 450px;
+    }
+    
+    .nav__toggle {
+        display: none; /* Ocultar o botão de alternância em telas maiores */
+    }
+    
+    .nav__list {
+        display: flex;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+    
+    .nav__item {
+        margin-left: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    .nav__link {
+        color: var(--second-color);
+    }
+    
+    /* Estilos específicos para a seção Projetos */
+    .work__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    
+    .work__img img {
+        transition: transform 1s; /* Adicione uma transição suave */
+    }
+    
+    .work__img img:hover {
+        transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+    }
+}
+

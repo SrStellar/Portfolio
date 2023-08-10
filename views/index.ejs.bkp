@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Conhecido como SrStellar, sou desenvolvedor nas linguagens JavaScript, Html e algumas a mais. Confira meu portfólio e projetos relacionados.">
+        
+        <!-- Meta tags Open Graph -->
+        <meta property="og:title" content="Desenvolvedor de Sistemas JavaScript">
+        <meta property="og:description" content="Conhecido como SrStellar, sou desenvolvedor nas linguagens JavaScript, Html e algumas a mais. Confira meu portfólio e projetos relacionados.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="www.srstellar.dev">
+        <meta property="og:color" content="#5cd3ae">
+        <!-- <meta property="og:image" content="URL_DA_SUA_IMAGEM_DE_CAPA"> -->
+        <!-- <meta property="og:image:alt" content="Imagem de Capa do Desenvolvedor JavaScript"> -->
+        
+        <!-- Meta tags para SEO do Google -->
+        <meta name="robots" content="index, follow">
+
+        <link rel="stylesheet" href="css/style.css">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>SrStellar - Portfólio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">SrStellar</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#inicio" class="nav__link active">Início</a></li>
+                        <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#projetos" class="nav__link">Projetos</a></li>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="inicio">
+                <div class="home__data">
+                    <h1 class="home__title">Oi,<br>Sou conhecido como <span class="home__title-color">SrStellar</span><br> Apenas mais um Javascript developer.</h1>
+  
+                    <a href="/contato" class="button-contato" style="margin-left: 0px;">Contato</a>
+		</div>
+	
+                <div class="home__social">
+                    <a href="/discord" class="home__social-icon"><i class='bx bxl-discord'></i></a>
+                    <a href="/email" class="home__social-icon"><i class='bx bx-envelope'></i></a>
+                    <a href="/github" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+	        <div class="home__img" style="margin-top: 0px;">
+		    <img src="img/programador.png" alt="Programador">
+		</div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="sobre">
+                <h2 class="section-title">Sobre</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="img/sobre.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Conhecido como SrStellar</h2>
+                        <p class="about__text">Me tornei desenvolvedor javascript durante a pandemia, onde eu comecei fazendo bots para discord, passando alguns meses de experiência com javascript no discord, comecei a estudar de como fazer sites com nodejs e express, o qual este site é feito.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="habilidades">
+                <h2 class="section-title">Habilidades</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Habilidades na Área</h2>
+                        <p class="skills__text">Minhas habilidades na área de desenvolvimento surgiram durante a pandemia quando ganhei meu primeiro computador.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">78%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">68%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="img/skills.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="projetos">
+                <h2 class="section-title">Projetos</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://ethernitymc.com" target="_blank" class="work__img">
+                        <img src="img/ethernitymc.jpg" alt="EthernityMC">
+                    </a>
+                    <a href="https://www.pobrenodes.com.br" target="_blank" class="work__img">
+                        <img src="img/pobre-nodes.jpg" alt="Pobre Nodes">
+                    </a>
+                    <a href="https://dwnbotlist.tk" target="_blank" class="work__img">
+                        <img src="img/darkweblist.jpg" alt="DWN Botlist">
+                    </a>
+                </div>
+            </section>
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title" >SrStellar</p>
+            <div class="footer__social">
+                <a href="/discord" class="footer__icon" ><i class='bx bxl-discord'></i></a>
+                <a href="/email" class="footer__icon" ><i class='bx bx-envelope'></i></a>
+                <a href="/github" class="footer__icon" ><i class='bx bxl-github' ></i></a>
+            </div>
+            <p class="footer__copy" >2023 &copy; SrStellar - Todos os Direitos Reservados.</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
